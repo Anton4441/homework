@@ -163,10 +163,12 @@
 .body--opened-menu .burger-icon span {
     background: transparent;
 }
-.body--opened-menu .burger-icon span::before{
+
+.body--opened-menu .burger-icon span::before {
     top: 0;
     transform: rotate(45deg);
 }
+
 .body--opened-menu .burger-icon span::after {
     bottom: 0;
     transform: rotate(-45deg);
@@ -291,6 +293,97 @@
     opacity: 1;
 }
 
+/* ==================================================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==================================================================================================== */
+
+.footer {
+    color: var(--general-bg);
+    background: #AB8261;
+    padding: 30px 0 60px;
+}
+
+.footer__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer__col {}
+
+.footer__logo {}
+
+.footer__logo-text {
+}
+
+.footer__col-list {}
+
+.footer__col-item {}
+
+.footer__col-link {}
+
+.footer__contact-list {}
+
+.footer__contact-item {}
+
+.footer__contact-link {}
+
+.footer__col-tel {}
+
+.footer__col-number {}
+
+.footer__col-copy {}
+
+.socials {}
+
+.socials__list {
+    display: flex;
+    gap: 15px;
+}
+
+.socials__item {}
+
+.socials__link {}
+
+/* ============================================================================================ */
+/* ============================================================================================ */
 /* ============================================================================================ */
 
 @media (max-width: 1200px) {
@@ -298,6 +391,7 @@
         margin-right: 0;
         max-width: 377px;
     }
+
     .hero__img-control {
         position: static;
         max-width: none;
