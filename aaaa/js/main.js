@@ -4,6 +4,9 @@
         const burgerIcon = e.target.closest('.burger-icon')
         const navLink = e.target.closest('.nav__link')
         if (!burgerIcon && !navLink) return
+
+        if (document.documentElement.clientWidth > 900) return
+
         if (!document.body.classList.contains('body--opened-menu')) {
             document.body.classList.add('body--opened-menu')
         } else {
