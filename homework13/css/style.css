@@ -1,0 +1,144 @@
+:root {
+    --accent-bg: #fff
+}
+
+.body {
+    font-family: "Roboto";
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container {
+    max-width: 1810px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+/* ================= */
+
+.header {
+    background: url('../img/decor/header-bg.jpg') 50% 100% / cover no-repeat;
+}
+
+.header__top {
+    background: #00000066;
+}
+
+.header__inner {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    height: 104px;
+    padding: 36px 45px 0;
+    position: relative;
+}
+
+.header__logo .header__inner {
+    align-items: end;
+}
+
+.burger-icon {
+    display: flex;
+    width: 36px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+}
+
+.burger-icon span {
+    display: block;
+    width: 24px;
+    height: 4px;
+    background: #BDBDBD;
+    position: relative;
+}
+
+.burger-icon span::before,
+.burger-icon span::after {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 4px;
+    background: #BDBDBD;
+    position: absolute;
+}
+
+.burger-icon span::before {
+    top: -14px;
+}
+
+.burger-icon span::after {
+    bottom: -14px;
+}
+
+.nav {
+    display: none;
+}
+
+.nav__list {}
+
+.nav__item {}
+
+.nav__link {}
+
+.header__logo {
+    position: absolute;
+    left: 50%;
+    top: 52px;
+    transform: translateX(-50%);
+}
+
+.header__phone {
+    height: 29px;
+}
+
+.header__hero {
+    padding: 350px 0 265px;
+}
+
+.hero__inner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero__title {
+    font-weight: 300;
+    font-size: 80px;
+    text-align: center;
+    color: #f2f2f2;
+    margin-bottom: 193px;
+}
+
+.hero__buttons {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    background: #11111199;
+    border: 1px solid #c4c4c4;
+    justify-content: center;
+    align-items: center;
+    max-width: 348px;
+    width: 100%;
+    min-height: 77px;
+    font-weight: 300;
+    font-size: 24px;
+    color: #fff;
+}
