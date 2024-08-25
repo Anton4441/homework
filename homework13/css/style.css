@@ -27,6 +27,12 @@
     color: #0e0e0e;
 }
 
+.main__info {
+    margin-bottom: 92px;
+}
+
+.main__price {}
+
 .body--opened-modal {
     overflow: hidden;
     opacity: 1;
@@ -125,6 +131,10 @@
 
 .header__top {
     background: #00000066;
+}
+
+.body--opened-menu {
+    overflow: hidden;
 }
 
 .body--opened-menu .header__top {
@@ -331,7 +341,7 @@
 
 /* =================================== */
 
-.main__info {}
+
 
 .info {}
 
@@ -377,10 +387,155 @@
     background: #0e0e0e;
 }
 
+/* =================================== */
+
+
+
+.price {}
+
+.price__titile {
+    font-weight: 300;
+    font-size: 48px;
+    color: #000;
+    margin-bottom: 84px;
+    position: relative;
+}
+
+.price__titile::after {
+    content: '';
+    position: absolute;
+    background: #000;
+    height: 10px;
+    bottom: -26px;
+    left: -70px;
+    right: 1640px;
+}
+
+.price__inner {
+    margin-left: 145px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 35px 15px;
+}
+
+.price__text {
+    max-width: 829px;
+}
+
+.text__title {
+    font-weight: 400;
+    font-size: 48px;
+    color: #000;
+    margin-bottom: 48px;
+}
+
+.text__info {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 1.47187;
+    color: #333;
+}
+
+.price__decor img {
+    width: 100%;
+}
+
+.price__decor {
+    max-width: 607px;
+    position: relative;
+}
+
+.price__decor::before {
+    content: '';
+    position: absolute;
+    background: #e0e0e0;
+    top: 70px;
+    bottom: -340px;
+    width: 1px;
+}
+
+.price__button {
+    margin-top: 47px;
+}
+
+.button__quiz {
+    border: 1px solid #000;
+    max-width: 510px;
+    width: 100%;
+    height: 112px;
+    background: #000;
+    font-weight: 300;
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+
+    transition: all .5s;
+}
+
+.button__quiz:hover {
+    background: #252525;
+}
+
+.price__bonuses {
+    margin-left: 35px;
+    position: relative;
+}
+
+.bonuses__title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.47187;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.bonuses__list {
+    margin-left: 34px;
+    max-width: 520px;
+}
+
+.bonuses__item {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 1.47187;
+    color: #333;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.bonuses__item:last-child {
+    margin-bottom: 0px;
+}
+
+.bonuses__item:last-child::after {
+    content: '';
+    position: absolute;
+    top: -28px;
+    left: -104px;
+    right: 0px;
+    height: 1px;
+    background: #e0e0e0;
+}
+
+.bonuses__item::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #0e0e0e;
+    top: 18px;
+    left: -32px;
+}
 
 /* =================================== */
 /* =================================== */
 /* =================================== */
+
+@media (max-width: 1920px) { 
+    .price__titile::after {
+        right: 90vw;
+    }
+}
 
 @media (max-width: 1600px) {
     .info__inner {
@@ -391,9 +546,79 @@
         width: 15px;
         height: 15px;
     }
+
+    /* ---------- */
+}
+
+@media (max-width: 1300px) {
+    .padding {
+        padding: 0 30px 0 45px;
+    }
+
+    .price__titile {
+        font-size: 24px;
+    }
+
+    .price__titile::after {
+        height: 4px;
+        bottom: -22px;
+        right: 83vw;
+    }
+
+    .price__text {
+        max-width: 373px;
+    }
+
+    .text__title,
+    .text__info {
+        font-size: 18px;
+    }
+
+    .price__decor {
+        max-width: 275px;
+    }
+
+    .price__decor::before {
+        bottom: -143px;
+    }
+
+    .button__quiz {
+        max-width: 230px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .bonuses__title {
+        font-size: 18px;
+    }
+
+    .bonuses__list {
+        margin-left: 16px;
+    }
+
+    .bonuses__item {
+        font-size: 14px;
+        max-width: 200px;
+    }
+
+    .bonuses__item::before {
+        width: 9px; 
+        height: 9px;
+        top: 7px;
+        left: -15px;
+    }
+
+    .bonuses__item:last-child::after {
+        top: -13px;
+    }
 }
 
 @media (max-width: 900px) {
+    .main__info {
+        margin-bottom: 66px;
+    }
+
+    /* --------- */
     .burger-menu {
         background: #000;
     }
@@ -440,6 +665,29 @@
 
     /* -------- */
 
+    .price__titile {
+        margin-bottom: 42px;
+    }
+
+    .price__inner {
+        margin-left: 30px;
+        gap: 15px 15px;
+    }
+
+    .text__title {
+        margin-bottom: 22px;
+    }
+
+    .price__button {
+        margin-top: 21px;
+    }
+
+    .bonuses__item {
+        margin-bottom: 21px;
+    }
+
+    /* -------- */
+
     .modal__window {
         padding: 110px 164px 135px;
     }
@@ -459,6 +707,11 @@
 }
 
 @media (max-width: 700px) {
+    .main__info {
+        margin-bottom: 56px;
+    }
+
+    /* ---------- */
     .info__inner {
         grid-template-columns: auto;
         justify-content: center;
@@ -475,6 +728,45 @@
         left: 50%;
         bottom: -28px;
         transform: translateX(-50%);
+    }
+    
+    /* ---------- */
+    .padding {
+        text-align: center;
+        padding: 0 5px 0;
+    }
+
+    .price__titile {
+        margin-bottom: 46px;
+    }
+
+    .price__inner {
+        grid-template-columns: 334px;
+        justify-content: center ;
+        text-align: center;
+        margin-left: 0;
+        gap: 37px;
+    }
+
+    .text__title {
+        margin-bottom: 18px;
+    }
+
+    .price__button {
+        grid-row: 4 / 5;
+    }
+
+    .price__bonuses {
+        margin-left: 48px;
+        text-align: start;
+    }
+
+    .bonuses__title {
+        margin-bottom: 7px;
+    }
+
+    .bonuses__item {
+        margin-bottom: 12px;
     }
 
     /* ---------- */
@@ -536,6 +828,26 @@
 
     /* ---------- */
 
+    .price__decor {
+        margin-left: -20px;
+    }
+
+    .price__decor::before {
+        content: none;
+    }
+
+    .price__bonuses::before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        background: #e0e0e0;
+        top: 0;
+        bottom: 0;
+        left: -36px;
+    }
+
+    /* ---------- */
+
     .modal {
         padding: 0;
         align-items: end;
@@ -565,6 +877,12 @@
 
     .info__element {
         max-width: 1000px;
+    }
+
+    /* ---------- */
+
+    .price__inner {
+        grid-template-columns: auto;
     }
 }
 
